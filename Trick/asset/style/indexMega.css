@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    
+}
+
+body{
+    background-color:  rgb(92, 92, 92);
+}
+
+
+td{
+    width: 90px;
+    height: 90px;
+}
+
+.menu_top{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 55, 0 );
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 2222;
+}
+.menu_top>ul{
+
+    width: 70%;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+.menu_top>ul>li{
+    flex-grow: 1;
+    height: 100%;
+    width: inherit;
+    position: relative;
+
+
+}
+
+
+.menu_top>ul>li>a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: wheat;
+    transition: 0.4s;
+    border-bottom: 1px solid rgb(92, 92, 92);
+}
+.menu_top>ul>li>a:hover{
+    color: rgb(255, 55, 0 );
+}
+
+
+.menu_top>ul>li>a:hover{
+    background-color: rgb(92, 92, 92);
+    border-bottom: 1px solid rgb(255, 55, 0 );
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.menu_top>ul>li>ul{
+    background-color: rgb(255, 55, 0 );
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; 
+    flex-wrap: wrap;
+}
+.menu_top>ul>li:hover>ul{
+    display: flex;
+}
+
+.menu_top>ul>li>ul>li{
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+
+}
+
+.menu_top>ul>li>ul>li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    color: white;
+    transition: 0.4s;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.menu_top>ul>li>ul>li>a:hover{
+    background-color: rgb(92, 92, 92);
+    color: rgb(255, 55, 0 );
+}
+
+
+
+
+.menu{
+    width: 4%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+.menu>ul{
+    width: 100%;
+    background-color:rgb(255, 55, 0 );
+
+}
+.menu>ul>li{
+    width: inherit;
+    height: 50px;
+    border-bottom: 1px solid wheat;
+    position: relative;
+
+}
+
+.menu>ul>li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: wheat;
+    transition: 0.4s;
+}
+.menu>ul>li>a:hover{
+    background-color: rgb(92, 92, 92);  
+    color: rgb(255, 55, 0 ); 
+}
+
+/* ...mega... */
+
+.menu>ul>li>ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 120px;
+    display: none; 
+    flex-wrap: wrap;
+}
+.menu>ul>li:hover>ul{
+    display: flex;
+}
+
+.menu>ul>li>ul>li{
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid wheat;
+}
+
+.menu>ul>li>ul>li>a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    background-color: rgb(255, 55, 0 );
+}
+
+.menu>ul>li>ul>li>a:hover{
+    background-color:rgb(92, 92, 92);
+    color: wheat;
+}
+
+.car{
+    max-width: 900px;
+    margin: 100px auto 40px;
+    height: 50vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+/* عکس هایی که در کلاس کار هستند */
+
+.car>img{
+    display: flex;
+    width: 33%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 10px;
+    transition: .4s;
+    box-shadow: 0 0 15px 2px rgba(255, 55, 0, 0.808);
+    border-radius: 10px;
+}
+
+.car>img:hover{
+    transform: scale(1.1);
+}
+
+.car2{
+    max-width: 900px;
+    margin: 50px auto 40px;
+    height: 50vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.car2>img{
+    display: flex;
+    width: 33%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 10px;
+    transition: .4s;
+    box-shadow: 0 0 15px 2px rgba(255, 55, 0, 0.829);
+    border-radius: 10px;
+}
+.car2>img:hover{
+    transform: scale(1.1);
+}
+.mar{
+    background-color: rgba(255, 55, 0, 0.692);
+    color: white;
+    font-size: 30px;
+}
+
+.cars{
+    max-width: 900px;
+    margin: 50px auto 100px;
+    height: 50vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.cars>img:hover{
+    transform: scale(1.1);
+}
+
+.cars>img{
+    display: flex;
+    width: 55%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 10px;
+    transition: .4s;
+    box-shadow: 0 0 15px 2px rgba(255, 55, 0, 0.829);
+    border-radius: 10px;
+    transition: .4s;
+}
+.benz1>h1{
+    font-size: 35px;
+    padding: 30px;
+
+}
+.benz1>p{
+    color: white;
+    font-size: 15px;
+    background-color: rgba(255, 55, 0, 0.721);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.bmw>h1{
+    padding-left: 30px;
+    font-size: 35px;
+
+}
+.bmw>p{
+    color: white;
+    font-size: 15px;
+    background-color: rgba(255, 55, 0, 0.721);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.aston>h1{
+    font-size: 35px;
+    padding: 30px;
+
+}
+.aston>p{
+    color: white;
+    font-size: 15px;
+    background-color: rgba(255, 55, 0, 0.721);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.land>h1{
+    font-size: 35px;
+    padding: 30px;
+
+}
+.land>p{
+    color: white;
+    font-size: 15px;
+    background-color: rgba(255, 55, 0, 0.721);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+.porsche>h1{
+    font-size: 35px;
+    padding: 30px;
+
+}
+.porsche>p{
+    margin: 0 auto ;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(255, 55, 0, 0.721);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.genesis>h1{
+    font-size: 35px;
+    padding: 30px;
+
+}
+.genesis>p{
+    color: white;
+    font-size: 15px;
+    background-color: rgba(255, 55, 0, 0.721);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+
+.foot{
+    margin-top: 200px;
+    background-color: rgba(255, 55, 0, 0.692);
+    width: 100%;
+    height: 300px;
+    color: whitesmoke;
+    font-size: 45px;
+    padding: 15px;
+    text-align: center;
+    transition: .4s;
+}
+.foot:hover{
+    color: rgb(255, 55, 0 );
+    background-color: rgb(92, 92, 92);
+}
